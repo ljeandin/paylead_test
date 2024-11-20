@@ -1,0 +1,33 @@
+.ticket-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-white);
+  width: calc(40 * var(--spacing));
+}
+.ticket-form__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing);
+}
+
+.ticket-form__form {
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.ticket-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.5 * var(--spacing));
+}
+
+.ticket-form__submit-wrapper {
+  margin-top: var(--spacing);
+}

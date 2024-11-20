@@ -1,0 +1,24 @@
+.home-page {
+  min-height: 100vh;
+  /* Polka dot background */
+  background-image: radial-gradient(var(--color-primary) 1px, transparent 2px),
+    radial-gradient(var(--color-primary) 1px, transparent 2px);
+  background-position: 0px 0px, 5px 5px;
+  background-size: 10px 10px;
+  background-color: var(--color-white);
+}
+
+.home-page__header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: calc(2 * var(--spacing));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page__header-buttons {
+  display: flex;
+  gap: calc(2 * var(--spacing));
+  align-items: center;
+}

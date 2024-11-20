@@ -1,0 +1,29 @@
+:root,
+select,
+input,
+textarea {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+p,
+button {
+  font-size: 1rem;
+}

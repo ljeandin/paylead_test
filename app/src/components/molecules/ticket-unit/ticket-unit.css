@@ -1,0 +1,22 @@
+.ticket-unit {
+  padding: var(--spacing);
+  background: var(--color-white);
+  margin-bottom: var(--spacing);
+}
+
+.ticket-unit > *:not(:last-child) {
+  margin-bottom: var(--spacing);
+}
+
+.ticket-unit__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ticket-unit__delete-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}

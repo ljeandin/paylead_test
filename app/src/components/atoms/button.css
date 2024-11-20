@@ -1,0 +1,65 @@
+.button {
+  transition: box-shadow var(--transition-duration),
+    transform var(--transition-duration);
+  padding: var(--spacing);
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+}
+
+.button--regular {
+  font-size: calc(2 * var(--spacing));
+  height: calc(5 * var(--spacing));
+  min-width: calc(5 * var(--spacing));
+}
+
+.button--small {
+  font-size: calc(1.5 * var(--spacing));
+  height: calc(4 * var(--spacing));
+  min-width: calc(4 * var(--spacing));
+}
+
+.button--white {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: var(--stroke-thickness) solid var(--color-primary);
+}
+
+.button--colored {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: var(--stroke-thickness-thick) solid var(--color-white);
+}
+
+.button--white:hover {
+  box-shadow: var(--shadow-colored);
+}
+
+.button--colored:hover {
+  box-shadow: var(--shadow-white);
+}
+
+.button--with-icon {
+  padding: calc(0.5 * var(--spacing));
+}
+
+.button__icon {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .button--regular {
+    font-size: calc(2.5 * var(--spacing));
+  }
+
+  .button--small {
+    font-size: calc(2 * var(--spacing));
+  }
+}

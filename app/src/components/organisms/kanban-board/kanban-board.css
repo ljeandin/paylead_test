@@ -1,0 +1,25 @@
+.kanban-board {
+  display: flex;
+  flex-direction: row;
+  padding: calc(2 * var(--spacing));
+  gap: calc(2 * var(--spacing));
+  overflow: auto;
+}
+
+.kanban-board__column {
+  width: calc(35 * var(--spacing));
+  min-width: calc(20 * var(--spacing));
+}
+
+.kanban-board__column-title {
+  text-transform: uppercase;
+  padding: calc(0.5 * var(--spacing)) var(--spacing);
+  background: var(--color-white);
+  margin-bottom: calc(2 * var(--spacing));
+}
+
+@media (min-width: 768px) {
+  .kanban-board {
+    justify-content: center;
+  }
+}
