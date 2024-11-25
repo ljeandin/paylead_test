@@ -4,6 +4,7 @@
   padding: calc(2 * var(--spacing));
   gap: calc(2 * var(--spacing));
   overflow: auto;
+  min-height: 100vh;
 }
 
 .kanban-board__column {
