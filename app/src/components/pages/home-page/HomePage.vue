@@ -71,6 +71,5 @@ const toggleForm = () => {
     </header>
     <KanbanBoard :columns="columns" :color="color" />
     <TicketForm v-if="isFormOpen" :columns="columns" @close="toggleForm" />
-    />
   </main>
 </template>
